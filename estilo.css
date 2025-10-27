@@ -711,7 +711,6 @@ section#user-discussions-on-scripts-written>section.text-content {
     top: 0;
     height: 100%;
     width: 4px;
-    background: var(--border-accent);
     transition: width 0.3s ease;
 }
 
