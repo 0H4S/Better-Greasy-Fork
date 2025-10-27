@@ -972,7 +972,6 @@ a.self-link:visited {
 }
 
 .user-link:focus {
-    outline: 2px solid var(--border-accent);
     outline-offset: 1px;
 }
 
