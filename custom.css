@@ -1195,3 +1195,265 @@ a.self-link:visited {
     justify-content: center;
     margin-top: 24px;
 }
+
+.bgf-translate-btn-desc {
+    float: right;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.bgf-translate-btn-desc:hover {
+    background-color: #00b1b8;
+    color: #fff;
+    border-color: #00b1b8;
+}
+
+.bgf-translate-btn-comment {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 0.85em;
+    opacity: 0.6;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: 0.2s;
+}
+
+.bgf-translate-btn-comment:hover {
+    opacity: 1;
+    color: #00b1b8;
+}
+
+.bgf-trans-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    animation: bgf-fadeIn 0.2s ease-out;
+}
+
+.bgf-trans-modal {
+    background: #fff;
+    color: #333;
+    width: 380px;
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bgf-trans-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+.bgf-trans-input,
+.bgf-trans-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.bgf-trans-input:focus,
+.bgf-trans-select:focus {
+    border-color: #00b1b8;
+    box-shadow: 0 0 0 2px rgba(0, 177, 184, 0.1);
+}
+
+.bgf-lang-container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.bgf-lang-search {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    color: inherit;
+}
+
+.bgf-lang-list {
+    max-height: 140px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bgf-lang-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.bgf-lang-option:hover {
+    background: rgba(0, 177, 184, 0.1);
+}
+
+.bgf-lang-option.selected {
+    background: #00b1b8;
+    color: #fff;
+}
+
+.bgf-trans-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bgf-trans-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    transition: transform 0.1s;
+}
+
+.bgf-trans-btn:active {
+    transform: scale(0.96);
+}
+
+.bgf-btn-primary {
+    background: #00b1b8;
+    color: white;
+}
+
+.bgf-btn-secondary {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.bgf-btn-secondary:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.bgf-gemini-group {
+    background: rgba(0, 177, 184, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #00b1b8;
+}
+
+.bgf-info-icon {
+    float: right;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.bgf-info-icon:hover {
+    opacity: 1;
+    color: #00b1b8;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bgf-translate-btn-desc {
+        background-color: #2a2a2a;
+        color: #ccc;
+        border-color: #444;
+    }
+
+    .bgf-trans-modal {
+        background: #1a1a1a;
+        color: #eee;
+        border: 1px solid #333;
+    }
+
+    .bgf-trans-input,
+    .bgf-trans-select,
+    .bgf-lang-container {
+        background: #252525;
+        color: #fff;
+        border-color: #444;
+    }
+
+    .bgf-lang-search {
+        border-bottom-color: #444;
+    }
+
+    .bgf-lang-option {
+        border-bottom-color: #333;
+    }
+
+    .bgf-lang-option:hover {
+        background: #333;
+    }
+
+    .bgf-lang-option.selected {
+        background: #00b1b8;
+    }
+
+    .bgf-btn-secondary {
+        border-color: #444;
+        color: #aaa;
+    }
+
+    .bgf-btn-secondary:hover {
+        background: #333;
+        color: #fff;
+    }
+}
+
+@keyframes bgf-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bgf-spin {
+    animation: bgf-spin 1s linear infinite;
+}
+
+@keyframes bgf-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
